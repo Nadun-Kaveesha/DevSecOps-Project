@@ -62,6 +62,7 @@ pipeline{
             }
         }
 
+
         stage("TRIVY"){
             steps{
                 sh "trivy image nasi101/netflix:latest > trivyimage.txt" 
